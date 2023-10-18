@@ -22,17 +22,28 @@ https://colab.research.google.com/github/EdjeElectronics/TensorFlow-Lite-Object-
 
 NB: IT WILL RUN OUT OF RESOURCES IF USING THE RUNTIME.
 
-Instead you can follow the code blocks and use them in ur WSL2 distro (Preferably Ubuntu). Make sure you have setup WSL2 with GPU support (Look at the previous header). Some changes are required, as the link above is meant to run in the collab notebook. The principle is still the same, just take the code out, modify it to work in your environment and run in the same order.
+Instead you can follow the guide under. Make sure you have setup WSL2 with GPU support (Look at the previous header).
 
-Once everything is setup you can use the final code block to start training:
+# WSL2 Train object dection
+
+This repo contains the necessary instruction to setup and start a training with tensorboard for visualization. 
+
+First you will have to prepare some images (labeled) and drop the zip file in the root directory.
 
 ```
-python3 /home/sivertheisholt/models/research/object_detection/model_main_tf2.py \
-    --pipeline_config_path=/home/sivertheisholt/models/mymodel/pipeline_file.config \
-    --model_dir=/home/sivertheisholt/training \
-    --alsologtostderr \
-    --num_train_steps=40000 \
-    --sample_1_of_n_eval_examples=1
+start_training.sh
+```
+
+Remember to: 
+
+```
+chmod +x start_training.sh
+```
+
+When the training starts you can access the tensorboard over at (Remember it takes a few minutes of training to show data):
+
+```
+http://localhost:6006
 ```
 
 To make sure the gpu is being utilized you can run the following and check the GPU Utilization:
@@ -40,5 +51,3 @@ To make sure the gpu is being utilized you can run the following and check the G
 ```
 nvidia-smi
 ```
-
-# Required setup for
