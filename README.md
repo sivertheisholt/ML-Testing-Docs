@@ -24,11 +24,13 @@ NB: IT WILL RUN OUT OF RESOURCES IF USING THE RUNTIME.
 
 Instead you can follow the guide under. Make sure you have setup WSL2 with GPU support (Look at the previous header).
 
-# WSL2 Train object dection
+# WSL2 Train model
 
 This repo contains the necessary instruction to setup and start a training with tensorboard for visualization. 
 
-First you will have to prepare some images (labeled) and drop the zip file in the root directory.
+First you will have to prepare some images (labeled) and drop the zip file in the root directory. Name the file images.zip.
+
+Start the training by running the following script:
 
 ```
 start_training.sh
@@ -40,7 +42,7 @@ Remember to:
 chmod +x start_training.sh
 ```
 
-When the training starts you can access the tensorboard over at (Remember it takes a few minutes of training to show data):
+When the training starts you can access the tensorboard over at (Tt takes a few minutes of training to show data):
 
 ```
 http://localhost:6006
