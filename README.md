@@ -1,20 +1,20 @@
 # ML-Testing-Docs
 
-Repository for me to put my spaghetti docs when testing out ML stuff
+Repository for setting up WSL2 for training object detection model
 
-# Enable NVIDIA CUDA on WSL2
+## Enable NVIDIA CUDA on WSL2
 
 Follow the guide provided here to get GPU ready on WSL2:
 
 https://learn.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl
 
-# Install tensorflow on WSL2
+## Install tensorflow on WSL2
 
 If the GPU does not show up in the list you can try installing CUDNN:
 
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
 
-# Train object detection model:
+## Train object detection model:
 
 This collab has everything needed to train using your own data:
 
@@ -24,7 +24,7 @@ NB: IT WILL RUN OUT OF RESOURCES IF USING THE RUNTIME.
 
 Instead you can follow the guide under. Make sure you have setup WSL2 with GPU support (Look at the previous header).
 
-# WSL2 Train model
+## WSL2 Train model
 
 This repo contains the necessary instruction to setup and start a training with tensorboard for visualization. 
 
