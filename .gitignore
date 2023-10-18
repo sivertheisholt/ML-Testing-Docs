@@ -1,0 +1,9 @@
+mymodel
+models
+images
+images.zip
+labelmap.*
+train.tfrecord
+val.tfrecord
+pipeline_file.config
+training

@@ -1,4 +1,5 @@
 # ML-Testing-Docs
+
 Repository for me to put my spaghetti docs when testing out ML stuff
 
 # Enable NVIDIA CUDA on WSL2
@@ -12,7 +13,6 @@ https://learn.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl
 If the GPU does not show up in the list you can try installing CUDNN:
 
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
-
 
 # Train object detection model:
 
@@ -40,3 +40,5 @@ To make sure the gpu is being utilized you can run the following and check the G
 ```
 nvidia-smi
 ```
+
+# Required setup for
