@@ -70,7 +70,7 @@ nvidia-smi
 After training is done you can export the model to tflite by using the following script:
 
 ```
-convert_graph_tf_lite.py
+convert_model_tf_lite.sh
 ```
 
 ## Notebook train object detection model
