@@ -7,3 +7,4 @@ train.tfrecord
 val.tfrecord
 pipeline_file.config
 training
+custom_model_lite

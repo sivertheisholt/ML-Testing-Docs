@@ -72,7 +72,6 @@ cat <<EOF > ./labelmap.txt
 class1
 class2
 class3
-person
 EOF
 
 # Create CSV data files and TFRecord files
