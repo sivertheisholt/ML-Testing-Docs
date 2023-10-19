@@ -41,6 +41,13 @@ Replace with model you wanna use, must be one in the MODELS_CONFIG varibable:
 chosen_model='ssd-mobilenet-v2-fpnlite-320'
 ```
 
+The following variables affects the training part, if you have problems with RAM you can lower the batch_size. num_steps is the number of steps the training should perform before it's done. Increasing this might give higher accuracy, but will increase training time.
+
+```
+num_steps=40000
+batch_size=16
+```
+
 ### Start training
 
 Start the training by running the following script:
