@@ -67,6 +67,12 @@ To make sure the gpu is being utilized you can run the following and check the G
 nvidia-smi
 ```
 
+After training is done you can export the model to tflite by using the following script:
+
+```
+convert_graph_tf_lite.py
+```
+
 ## Notebook train object detection model
 
 This collab has everything needed to train using your own data:
