@@ -10,3 +10,5 @@ python3 ./models/research/object_detection/export_tflite_graph_tf2.py \
     --pipeline_config_path $pipeline_file
 
 python3 ./convert_graph_tf_lite.py
+
+cp ./labelmap.txt ./custom_model_lite
